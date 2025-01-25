@@ -57,7 +57,7 @@ jobs:
             # 运行新容器（如果 80 端口仍被占用，使用其他端口）
             if ! docker run -d \
               --name ${{ env.IMAGE_NAME }} \
-              -p 80:80 \
+              -p 8080:80 \
               --restart always \
               ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest; then
               
