@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # 允许手动触发
 
 env:
-  IMAGE_NAME: react-docker # 替换为你的应用名称
+  IMAGE_NAME: deploy-react-docker # 替换为你的应用名称
 
 jobs:
   build-and-deploy:
